@@ -62,6 +62,19 @@ public class AppControllerTest {
 		assertEquals("get employee", result);
 
 	}
+	
+	@Test
+	public void testEmployeePost() throws Exception {
+		Employee employee = createEmployee("test", "dev");
+		ResultActions responseEntity = processApiRequest(posturl, Http, name, employee, username, password)
+	}
+	
+	
+
+	private Employee createEmployee(String string, String string2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	private ResultActions processApiRequest(String api, HttpMethod methodType, String name, Employee employee,
 			String username, String password) {
