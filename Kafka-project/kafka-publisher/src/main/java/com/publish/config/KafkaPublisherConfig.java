@@ -23,7 +23,6 @@ public class KafkaPublisherConfig {
 		configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 		return new DefaultKafkaProducerFactory<String , Object>(configs);
 	}
-
 	
 	@Bean
 	public KafkaTemplate<String, Object> kafkaTemplate() {

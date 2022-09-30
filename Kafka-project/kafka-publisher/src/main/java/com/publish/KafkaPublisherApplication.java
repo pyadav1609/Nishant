@@ -1,6 +1,4 @@
 package com.publish;
-
-import org.apache.el.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,9 +22,7 @@ public class KafkaPublisherApplication {
 	public String publishMessage(@PathVariable String name) {
 		template.send(topic, "Hi " + name + " this is to inform that this message is coming frm your kafka publisher!");
 		return "Data has been published";
-
 	}
-	
 	
 	@GetMapping("/publishjson")
 	public String publishMessage() {
@@ -34,11 +30,6 @@ public class KafkaPublisherApplication {
 		template.send(topic, user);
 		return "JSon data has been published";
 	}
-	
-	
-	
-	
-	
 	
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaPublisherApplication.class, args);
