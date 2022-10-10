@@ -24,7 +24,7 @@ public class ProducerResource {
 	public String publish(@PathVariable("msg") final String msg) {
 	
 		jmsTemplate.convertAndSend(queue, msg);
-		return "Published successfully" + msg;
+		return "Published successfully " + msg;
 	}
 
 }
