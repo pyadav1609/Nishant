@@ -3,5 +3,6 @@ export default class Student {
     lastname: String = " ";
     age:number = 0;
     class:number = 0 ;
-    subject:String = " "
+    subject:String = " ";
+    gender:String= " "
 }
