@@ -1,5 +1,20 @@
 {
   "students": [
-    { "firstname": "Ram", "lastname": "Kumar", "class": 12, "age": 15, "id": 1 }
+    {
+      "firstname": "Ram",
+      "lastname": "Kumar",
+      "class": 12,
+      "age": 15,
+      "id": 1
+    },
+    {
+      "firstname": " nishant",
+      "lastname": "gupta",
+      "age": 32,
+      "class": 12,
+      "subject": "PCM",
+      "gender": "Male",
+      "id": 2
+    }
   ]
 }
