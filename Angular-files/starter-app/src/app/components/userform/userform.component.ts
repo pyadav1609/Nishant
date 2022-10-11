@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Student from 'src/app/Entity/Student';
+import { StudentsService } from 'src/app/Services/students.service';
 
 @Component({
   selector: 'app-userform',
@@ -10,7 +11,7 @@ export class UserformComponent implements OnInit {
 
   student: Student = new Student();
 
-  constructor() { }
+  constructor( public studentService: StudentsService) { }
 
   ngOnInit(): void {
   }
