@@ -5,7 +5,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserformComponent } from './components/userform/userform.component';
 
-const routes: Routes = [{path:"home", component: HomeComponent}, {path:"register" , component:UserformComponent}, {path:"contact" , component:ContactComponent}, {path:"about", component:AboutComponent}];
+const routes: Routes = [{path:"", component: HomeComponent}, {path:"register" , component:UserformComponent}, {path:"contact" , component:ContactComponent}, {path:"about", component:AboutComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
