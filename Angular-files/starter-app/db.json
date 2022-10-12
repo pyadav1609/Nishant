@@ -15,6 +15,24 @@
       "subject": "PCM",
       "gender": "Male",
       "id": 2
+    },
+    {
+      "firstname": " Vishal",
+      "lastname": "Kumar",
+      "age": 31,
+      "class": 12,
+      "subject": "PCMB",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "firstname": " Vishal",
+      "lastname": "Kumar",
+      "age": 31,
+      "class": 12,
+      "subject": "PCMB",
+      "gender": "Male",
+      "id": 4
     }
   ]
 }
