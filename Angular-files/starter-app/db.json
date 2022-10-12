@@ -35,6 +35,24 @@
       "subject": "PCM",
       "gender": "Female",
       "id": 7
+    },
+    {
+      "firstname": " Peter",
+      "lastname": "Davidson",
+      "age": 19,
+      "class": 10,
+      "subject": "PCM",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "firstname": " Susie",
+      "lastname": "Paul",
+      "age": 19,
+      "class": 10,
+      "subject": "PCMB",
+      "gender": "Female",
+      "id": 9
     }
   ]
 }
