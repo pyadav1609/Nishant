@@ -33,6 +33,15 @@
       "subject": "PCMB",
       "gender": "Male",
       "id": 4
+    },
+    {
+      "firstname": " Aman",
+      "lastname": "Kumar",
+      "age": 21,
+      "class": 11,
+      "subject": "PCM",
+      "gender": "Male",
+      "id": 5
     }
   ]
 }

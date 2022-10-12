@@ -18,6 +18,10 @@ export class StudentsService {
   }) {
     return this.http.post(BASE_URL, student);
   }
+  
+  getStudents() {
+    return this.http.get(BASE_URL);
+  }
 
   constructor(public http: HttpClient) {}
 }
