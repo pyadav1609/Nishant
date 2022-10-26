@@ -1,5 +1,8 @@
 package com.lambda;
 
-public class OrderHandler {
+import org.springframework.cloud.function.adapter.aws.SpringBootRequestHandler;
+
+public class OrderHandler extends SpringBootRequestHandler<String, Object> {
 
 }
+ 

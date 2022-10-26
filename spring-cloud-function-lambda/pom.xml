@@ -75,6 +75,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>SpringBoot-AWS-Lambda</finalName>
 	</build>
 
 </project>

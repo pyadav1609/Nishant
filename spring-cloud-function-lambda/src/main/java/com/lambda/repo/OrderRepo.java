@@ -9,7 +9,7 @@ import com.lambda.entity.Order;
 
 @Repository
 public class OrderRepo {
-	
+
 	public List<Order> buildOrders() {
 		return Stream.of(
 				new Order(101,"SAmsung Galaxy s22", 100000, 1),
