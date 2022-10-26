@@ -15,7 +15,7 @@ public class SpringAwsDeployApplication {
 	
 	@GetMapping("/hello")
 	public String helloWorld() {
-		return "hello my name is Nishant";
+		return "hello my name is Nishant" ;
 	}
 
 }
