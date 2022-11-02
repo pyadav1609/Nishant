@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.amazonaws.services.sns.AmazonSNSClient;
+import com.amazonaws.services.sns.model.PublishRequest;
 import com.amazonaws.services.sns.model.SubscribeRequest;
 
 @SpringBootApplication
@@ -24,6 +25,22 @@ public class SpringAwsSnsDemoApplication {
 		SubscribeRequest request = new SubscribeRequest(TOPIC_ARN, "email",email);
 		return "subcription request is pending, to confirm the subscription check your email: "+email;
 		
+	}
+	
+	@GetMapping("/sendnotification")
+	public String publishMessageToTopic() {
+		PublishRequest publishRequest = new PublishRequest(TOPIC_ARN, buildEmailBody(), "Message from you spring boot app");
+		amazonSNSClient.publish(publishRequest);
+		return "Notification sent sucessfully"
+	}
+	
+	
+	private String buildEmailBody() {
+		return "Dear Customer, \n " + 
+				"\n" +
+				"we are offering 50% off on all jeans and Tshirts "+ "\n"+
+				"Please visit our nerest store to avail this offer, minimum purchase value is 4000, " + "\n" + 
+				"Offers lasts till 9th December";
 	}
 	
 	
