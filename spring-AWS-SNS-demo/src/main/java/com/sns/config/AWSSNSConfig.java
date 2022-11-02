@@ -13,11 +13,15 @@ import com.amazonaws.services.sns.AmazonSNSClientBuilder;
 @Configuration
 public class AWSSNSConfig {
 	
+	public static  final String SECRET_KEY = "nEp1YQ52y+aFO60benG5Nhvemvuq4XYVtDVSuKeZ";
+	public static  final String ACCESS_KEY = "AKIA4MFLODBGISOXZF4O";
+	
 	@Primary
 	@Bean
 	public AmazonSNSClient getSnsClient() {
 		return (AmazonSNSClient) AmazonSNSClientBuilder.standard().withRegion(Regions.US_EAST_1)
-				.withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("", ""))).build();
+				.withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY)))
+				.build();
 	}
 
 }
