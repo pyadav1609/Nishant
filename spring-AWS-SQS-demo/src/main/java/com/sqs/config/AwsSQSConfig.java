@@ -22,6 +22,7 @@ public class AwsSQSConfig {
 	@Value("${cloud.aws.credentials.secret-key}")
 	private String awsSecretKey;
 
+	@Bean
 	public QueueMessagingTemplate queueMessagingTemplate() {
 		return new QueueMessagingTemplate(amazonSQSAsync());
 	}

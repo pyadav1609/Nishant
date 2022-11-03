@@ -31,7 +31,7 @@ public class SpringAwsSqsDemoApplication {
 		queueMessagingTemplate.send(endpoint, MessageBuilder.withPayload(message).build());
 	}
 	
-	@SqsListener("/consume")
+	@SqsListener("your-queue-name")
 	public void loadMessageFromSQS(String message) {
 		logger.info("MEssage from the queue is :{} ", message);
 	}

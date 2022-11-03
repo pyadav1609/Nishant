@@ -4,7 +4,7 @@ cloud:
       static: us-east-1
       auto: false
     credentials:
-      access-key: AKIA4MFLODBGISOXZF4O
-      secret-key: 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
-    end-point:
+      access-key: AKIA4MFLODBGGDQUJGGL
+      secret-key: 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
+    endpoint:
       uri: https://sqs.us-east-1.amazonaws.com/850763061324/nishant-queue
