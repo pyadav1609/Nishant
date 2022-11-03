@@ -8,3 +8,5 @@ cloud:
       secret-key: uc+cShuB/HaYoUTAbsJrrCTerPzxjgpkQEK1NCQS
     endpoint:
       uri: https://sqs.us-east-1.amazonaws.com/850763061324/nishant-queue
+server:
+  port: 9091
