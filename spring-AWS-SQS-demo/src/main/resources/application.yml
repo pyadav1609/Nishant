@@ -4,9 +4,9 @@ cloud:
       static: us-east-1
       auto: false
     credentials:
-      access-key: AKIA4MFLODBGGDQUJGGL
-      secret-key: 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
+      access-key:<> 
+      secret-key: <>
     endpoint:
-      uri: https://sqs.us-east-1.amazonaws.com/850763061324/nishant-queue
+      uri: <>
 server:
   port: 9091
